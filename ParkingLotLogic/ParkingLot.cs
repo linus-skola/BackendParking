@@ -22,11 +22,12 @@ namespace ParkingLotLogic
             }
             return parkingSpot;
         }
-        private int AddVehicle(int vehicleSize)
+        private int AddVehicle(IVehicle vehicle)
         {
             int foundSpot = -1;
             int currentSpotIndex = 0;
-            foreach(ParkingSpot pspot in parkingSpots)
+            int vehicleSize = vehicle.Size;
+            foreach (ParkingSpot pspot in parkingSpots)
             {
                 if(pspot.currentCapacity >= vehicleSize)
                 {
@@ -49,7 +50,7 @@ namespace ParkingLotLogic
         }
         public IVehicle SearchVehicle(string regNum, out int location)
         {
-            throw new NotImplementedException();
+            
         }
         public int MoveVehicle(string regNum, int newLocation)
         {
