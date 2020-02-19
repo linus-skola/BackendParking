@@ -29,9 +29,16 @@ namespace ParkingLotLogic
         {
             throw new NotImplementedException();
         }
+        /// <summary>
+        /// Skickar tillbaka en lista av IVehicles med hjälp av Clonespot i parkingspot.
+        /// </summary>
+        /// <param name="location">platsen att clona</param>
+        /// <returns></returns>
         public List<IVehicle> ParkingSpotContent(int location)
         {
-            throw new NotImplementedException();
+            ParkingSpot spot  = parkingSpots[location - 1].CloneSpot() as ParkingSpot;
+            List<IVehicle> vehicles = spot.vehiclesInSpot;
+            return vehicles;    
         }
         public List<string> OptimizeParkingLot()
         {
