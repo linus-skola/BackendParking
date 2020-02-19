@@ -15,35 +15,42 @@ namespace ParkingLotLogic
         }
         public int AddVehicle(IVehicle vehicle, int parkingSpot)
         {
-            location = parkingSpots[parkingSpot].AddVehicle(vehicle);
-        }
-        private int FindBestSpot(int parkingSpot, ) // type of vehicle
-        {
-            foreach(ParkingSpot pspot in parkingSpots)
+            bool sucssesfullAdd = parkingSpots[parkingSpot].AddVehicle(vehicle);
+            if (sucssesfullAdd == false)
             {
-
+                parkingSpot = -1;
+            }
+            return parkingSpot;
+        }
+        private int AddVehicle(IVehicle vehicle)
+        {
+            int foundSpot = -1;
+            int currentSpotIndex = 0;
+            int vehicleSize = vehicle.Size;
+            foreach (ParkingSpot pspot in parkingSpots)
+            {
+                if(pspot.currentCapacity >= vehicleSize)
+                {
+                    foundSpot = currentSpotIndex;
+                    break;
+                }
+                currentSpotIndex++;
             }
 
-
-            //
-            // 
-            // vehicleTypeLocaitonTwo = locationTwoVehicle.typeEnum
-            // if(vehicleTypeLocationOne == enum.car || )
-            //{
-            //  return -1;
-            //}
-            //else if()
-            //{
-            //  
-            //}
+            return foundSpot;
         }
         public IVehicle RemoveVehicle(string regNum)
         {
-            throw new NotImplementedException();
+            IVehicle matchingVehicle = SearchVehicle(regNum, out int location);
+            if(matchingVehicle != null)
+            {
+                parkingSpots[location].RemoveVehicle(regNum);
+            }
+            return matchingVehicle;
         }
         public IVehicle SearchVehicle(string regNum, out int location)
         {
-            throw new NotImplementedException();
+            
         }
         public int MoveVehicle(string regNum, int newLocation)
         {
