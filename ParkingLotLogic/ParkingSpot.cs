@@ -37,6 +37,7 @@ namespace ParkingLotLogic
             if (spotIndex != -1)
             {
                 vehicle = vehiclesInSpot[spotIndex];
+                currentCapacity += vehicle.Size;
                 vehiclesInSpot.Remove(spotIndex);
             }
             return vehicle;
