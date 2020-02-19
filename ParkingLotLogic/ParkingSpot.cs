@@ -10,31 +10,49 @@ namespace ParkingLotLogic
         internal int maxCapacity { get; set; }
         internal int currentCapacity { get; set; }
 
-<<<<<<< HEAD
         internal List<IVehicle> vehiclesInSpot = new List<IVehicle>();
 
         internal ParkingSpot(int maxCapacity)
-=======
-        List<IVehicle> vehiclesInSpot = new List<IVehicle>();
-        /// <summary>
-        /// Standard car sized parkingspot.
-        /// </summary>
-        internal ParkingSpot()
->>>>>>> master
         {
             this.maxCapacity = maxCapacity;
         }
-        internal bool AddVehicle(IVehicle vehicle)
+        internal bool AddVehicle(IVehicle vehicle, int position)
         {
-            throw new NotImplementedException();
+            if (vehicle.Size <= currentCapacity)
+            {
+                vehiclesInSpot.Add(vehicle);
+                currentCapacity -= vehicle.Size;
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
         internal IVehicle RemoveVehicle(string regNum)
         {
-            throw new NotImplementedException();
+            var result = FindVehicle(regNum);
+            IVehicle vehicle = result.Item1;
+            int spotIndex = result.Item2;
+            if (spotIndex != -1)
+            {
+                vehicle = vehiclesInSpot[spotIndex];
+                currentCapacity += vehicle.Size;
+                vehiclesInSpot.Remove(spotIndex);
+            }
+            return vehicle;
         }
-        internal bool FindVehicle(string regNum)
+        internal (IVehicle, int) FindVehicle(string regNum)
         {
-            throw new NotImplementedException();
+            IVehicle foundVehicle = null;
+            int currentIndex = 0;
+
+            int foundAtIndex = vehiclesInSpot.IndexOf(x => x.RegNum == regNum);
+            if (foundAtIndex != -1)
+            {
+                foundVehicle = vehiclesInSpot[foundAtIndex];
+            }
+            return (foundVehicle, foundAtIndex);
         }
 
         internal object CloneSpot()
