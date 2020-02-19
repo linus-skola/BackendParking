@@ -16,10 +16,11 @@ namespace ParkingLotLogic
         public int AddVehicle(IVehicle vehicle, int parkingSpot)
         {
             bool sucssesfullAdd = parkingSpots[parkingSpot].AddVehicle(vehicle);
-            if(sucssesfullAdd)
+            if (sucssesfullAdd == false)
             {
-
+                parkingSpot = -1;
             }
+            return parkingSpot;
         }
         private int FindBestSpot(int vehicleSize)
         {
