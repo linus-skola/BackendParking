@@ -9,7 +9,7 @@ namespace VehicleObjects
         public DateTime InTime { get; }
         public string RegNum { get; }
         public int Size { get; }
-
+        public Enum VehicleType { get; }
         public Car()
         {
             Size = 10;
