@@ -14,7 +14,6 @@ namespace VehicleObjects
         {
             Size = 5;
         }
-<<<<<<< HEAD
         public MC(DateTime inTime, string regNum, int size)
         {
             InTime = inTime;
@@ -27,12 +26,6 @@ namespace VehicleObjects
             return new Car(DateTime.Parse(InTime.ToString()),
                            (string)RegNum.Clone(),
                            Size);
-=======
-
-        public object Clone()
-        {
-            throw new NotImplementedException();
->>>>>>> 32e74fefaae2fdf679b7648db674fbea49df5486
         }
     }
 }
