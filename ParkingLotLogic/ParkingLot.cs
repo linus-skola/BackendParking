@@ -40,7 +40,12 @@ namespace ParkingLotLogic
         }
         public IVehicle RemoveVehicle(string regNum)
         {
-            throw new NotImplementedException();
+            IVehicle matchingVehicle = SearchVehicle(regNum, out int location);
+            if(matchingVehicle != null)
+            {
+                parkingSpots[location].RemoveVehicle(regNum);
+            }
+            return matchingVehicle;
         }
         public IVehicle SearchVehicle(string regNum, out int location)
         {
