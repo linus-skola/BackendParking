@@ -38,16 +38,15 @@ namespace ParkingLotLogic
             {
                 vehicle = vehiclesInSpot[spotIndex];
                 currentCapacity += vehicle.Size;
-                vehiclesInSpot.Remove(spotIndex);
+                vehiclesInSpot.Remove(vehicle);
             }
             return vehicle;
         }
         internal (IVehicle, int) FindVehicle(string regNum)
         {
             IVehicle foundVehicle = null;
-            int currentIndex = 0;
 
-            int foundAtIndex = vehiclesInSpot.IndexOf(x => x.RegNum == regNum);
+            int foundAtIndex = vehiclesInSpot.FindIndex(x => x.RegNum == regNum);
             if (foundAtIndex != -1)
             {
                 foundVehicle = vehiclesInSpot[foundAtIndex];

@@ -5,7 +5,7 @@ using VehicleObjects;
 
 namespace ParkingLotLogic
 {
-    class ParkingLot
+    public class ParkingLot
     {
         List<ParkingSpot> parkingSpots = new List<ParkingSpot>();
 
@@ -47,7 +47,8 @@ namespace ParkingLotLogic
         }
         public IVehicle RemoveVehicle(string regNum)
         {
-            IVehicle matchingVehicle = SearchVehicle(regNum, out int location);
+            int location = 0;
+            IVehicle matchingVehicle = SearchVehicle(regNum, out location);
             if(matchingVehicle != null)
             {
                 parkingSpots[location].RemoveVehicle(regNum);
@@ -56,6 +57,7 @@ namespace ParkingLotLogic
         }
         public IVehicle SearchVehicle(string regNum, out int location)
         {
+            location = 0;
             IVehicle foundVehicle = null;
             foreach(ParkingSpot pSpot in parkingSpots)
             {
@@ -66,6 +68,7 @@ namespace ParkingLotLogic
                     foundVehicle = result.Item1;
                     break;
                 }
+                location++;
             }
 
             return foundVehicle;

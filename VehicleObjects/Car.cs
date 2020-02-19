@@ -9,11 +9,8 @@ namespace VehicleObjects
         public DateTime InTime { get; }
         public string RegNum { get; }
         public int Size { get; }
-<<<<<<< HEAD
         public VehicleType VehicleType { get; }
-=======
-        public Enum VehicleType { get; }
->>>>>>> master
+
         public Car()
         {
             Size = 10;
