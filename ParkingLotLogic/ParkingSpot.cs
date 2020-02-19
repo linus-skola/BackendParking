@@ -10,18 +10,11 @@ namespace ParkingLotLogic
         internal int maxCapacity { get; set; }
         internal int currentCapacity { get; set; }
 
-<<<<<<< HEAD
         internal List<IVehicle> vehiclesInSpot = new List<IVehicle>();
 
-=======
-        List<IVehicle> vehiclesInSpot = new List<IVehicle>();
-        /// <summary>
-        /// Standard car sized parkingspot.
-        /// </summary>
->>>>>>> master
-        internal ParkingSpot()
+        internal ParkingSpot(int maxCapacity)
         {
-
+            this.maxCapacity = maxCapacity;
         }
         internal bool AddVehicle(IVehicle vehicle, int position)
         {
@@ -64,7 +57,13 @@ namespace ParkingLotLogic
 
         internal object CloneSpot()
         {
-            throw new NotImplementedException();
+            ParkingSpot clonedParkingSpot = new ParkingSpot(this.maxCapacity);
+            foreach (IVehicle vehicle in this.vehiclesInSpot)
+            {
+                IVehicle clonedVehicle = vehicle.Clone() as IVehicle;
+                clonedParkingSpot.vehiclesInSpot.Add(clonedVehicle);
+            }
+            return clonedParkingSpot;
         }
     }
 }

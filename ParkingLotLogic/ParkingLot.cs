@@ -70,13 +70,49 @@ namespace ParkingLotLogic
 
             return foundVehicle;
         }
+        /// <summary>
+        /// ´Metod som flyttar ett fordon från en plats till en annan
+        /// </summary>
+        /// <param name="regNum"></param>
+        /// <param name="newLocation"></param>
+        /// <returns></returns>
         public int MoveVehicle(string regNum, int newLocation)
         {
-            throw new NotImplementedException();
+            int oldLocation = 0;
+
+            IVehicle vehicleToMove = SearchVehicle(regNum, out oldLocation);
+            RemoveVehicle(vehicleToMove.RegNum);
+
+            if (vehicleToMove != null)
+            {
+                int newSpot = AddVehicle(vehicleToMove, newLocation);
+
+                if(newSpot == -1)
+                {
+                    AddVehicle(vehicleToMove, oldLocation);
+                    return newSpot;
+                }
+                else
+                {
+                    return newSpot;
+                }
+            }
+
+            else
+            {
+                return -1;
+            }
         }
+        /// <summary>
+        /// Skickar tillbaka en lista av IVehicles med hjälp av Clonespot i parkingspot.
+        /// </summary>
+        /// <param name="location">platsen att clona</param>
+        /// <returns></returns>
         public List<IVehicle> ParkingSpotContent(int location)
         {
-            throw new NotImplementedException();
+            ParkingSpot spot  = parkingSpots[location - 1].CloneSpot() as ParkingSpot;
+            List<IVehicle> vehicles = spot.vehiclesInSpot;
+            return vehicles;    
         }
         /// <summary>
         /// Loop throug all vehicles and moves if there is a better spot. returns a move order that can be displayed in frontend.
@@ -113,9 +149,30 @@ namespace ParkingLotLogic
             }
             return orderMessages;
         }
+        /// <summary>
+        /// Lägger till nya platser i parkeringen av valfri storlek
+        /// </summary>
+        /// <param name="amount"> så många platser vi vill lägga till</param>
+        /// <param name="spotSize">storleken på platsen</param>
+        /// <returns></returns>
         public bool AddParkingSpot(int amount, int spotSize)
         {
-            throw new NotImplementedException();
+            int parkingcount = parkingSpots.Count;
+
+            for (int i = 0; i < amount; i++)
+            {
+                ParkingSpot spot = new ParkingSpot(spotSize);
+                parkingSpots.Add(spot);
+            }
+
+            if (parkingSpots.Count == parkingcount + amount)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }
