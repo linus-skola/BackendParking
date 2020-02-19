@@ -7,8 +7,8 @@ namespace ParkingLotLogic
 {
     class ParkingSpot
     {
-        int maxCapacity { get; set; }
-        int currentCapacity { get; set; }
+        internal int maxCapacity { get; set; }
+        internal int currentCapacity { get; set; }
 
         internal List<IVehicle> vehiclesInSpot = new List<IVehicle>();
 

@@ -13,9 +13,15 @@ namespace ParkingLotLogic
         {
 
         }
+        /// <summary>
+        /// Add a vehicle in position. Can find best positon with AddVehicle(IVheicle) method.
+        /// </summary>
+        /// <param name="vehicle"></param>
+        /// <param name="parkingSpot"></param>
+        /// <returns></returns>
         public int AddVehicle(IVehicle vehicle, int parkingSpot)
         {
-            bool sucssesfullAdd = parkingSpots[parkingSpot].AddVehicle(vehicle);
+            bool sucssesfullAdd = parkingSpots[parkingSpot].AddVehicle(vehicle, parkingSpot);
             if (sucssesfullAdd == false)
             {
                 parkingSpot = -1;
@@ -25,7 +31,7 @@ namespace ParkingLotLogic
         private int AddVehicle(IVehicle vehicle)
         {
             int foundSpot = -1;
-            int currentSpotIndex = 0;
+            int currentSpotIndex = 1;
             int vehicleSize = vehicle.Size;
             foreach (ParkingSpot pspot in parkingSpots)
             {
@@ -75,7 +81,7 @@ namespace ParkingLotLogic
                 foreach (var vehicle in parkingSpot.vehiclesInSpot)
                 {
                     // kollar bästa möjliga plats att flytta varje fordon.
-                    int moveLocation = FindBestSpot(vehicle.Size);
+                    int moveLocation = AddVehicle(vehicle);
                     if (moveLocation < i)
                     {
                         RemoveVehicle(vehicle.RegNum);
