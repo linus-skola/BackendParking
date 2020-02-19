@@ -4,7 +4,7 @@ using System.Text;
 
 namespace VehicleObjects
 {
-    public class MC : IVehicle
+    public partial class MC : IVehicle
     {
         public DateTime InTime { get; set; }
         public string RegNum { get; set; }
@@ -13,6 +13,11 @@ namespace VehicleObjects
         public MC()
         {
             Size = 5;
+        }
+
+        public object Clone()
+        {
+            throw new NotImplementedException();
         }
     }
 }
