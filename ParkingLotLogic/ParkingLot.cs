@@ -21,7 +21,7 @@ namespace ParkingLotLogic
         /// <returns></returns>
         public int AddVehicle(IVehicle vehicle, int parkingSpot)
         {
-            bool sucssesfullAdd = parkingSpots[parkingSpot].AddVehicle(vehicle, parkingSpot);
+            bool sucssesfullAdd = parkingSpots[parkingSpot].AddVehicle(vehicle);
             if (sucssesfullAdd == false)
             {
                 parkingSpot = -1;
@@ -38,6 +38,7 @@ namespace ParkingLotLogic
                 if(pSpot.currentCapacity >= vehicleSize)
                 {
                     foundSpot = currentSpotIndex;
+                    pSpot.AddVehicle(vehicle);
                     break;
                 }
                 currentSpotIndex++;
@@ -58,20 +59,16 @@ namespace ParkingLotLogic
         public IVehicle SearchVehicle(string regNum, out int location)
         {
             location = 0;
-            IVehicle foundVehicle = null;
             foreach(ParkingSpot pSpot in parkingSpots)
             {
-                var result = pSpot.FindVehicle(regNum);
-                int inSpotLocation = result.Item2;
-                if (inSpotLocation > -1)
+                var foundVehicle = pSpot.FindVehicle(regNum);
+                if (foundVehicle.vehicle != null)
                 {
-                    foundVehicle = result.Item1;
-                    break;
+                    return foundVehicle.vehicle;
                 }
                 location++;
             }
-
-            return foundVehicle;
+            return null;
         }
         /// <summary>
         /// ´Metod som flyttar ett fordon från en plats till en annan

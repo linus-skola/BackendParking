@@ -17,7 +17,7 @@ namespace ParkingLotLogic
             this.maxCapacity = maxCapacity;
             this.currentCapacity = maxCapacity;
         }
-        internal bool AddVehicle(IVehicle vehicle, int position)
+        internal bool AddVehicle(IVehicle vehicle)
         {
             if (vehicle.Size <= currentCapacity)
             {
@@ -43,16 +43,19 @@ namespace ParkingLotLogic
             }
             return vehicle;
         }
-        internal (IVehicle, int) FindVehicle(string regNum)
+        internal (IVehicle vehicle, int position) FindVehicle(string regNum)
         {
-            IVehicle foundVehicle = null;
-
-            int foundAtIndex = vehiclesInSpot.FindIndex(x => x.RegNum == regNum);
-            if (foundAtIndex != -1)
+            int position = 0;
+            foreach (IVehicle vehicle in vehiclesInSpot)
             {
-                foundVehicle = vehiclesInSpot[foundAtIndex];
+                if (vehicle.RegNum == regNum)
+                {
+                    return (vehicle, position);
+                }
+                position++;
             }
-            return (foundVehicle, foundAtIndex);
+
+            return (null, -1);
         }
 
         internal object CloneSpot()
