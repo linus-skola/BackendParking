@@ -15,7 +15,14 @@ namespace ParkingLotLogic
         }
         public int AddVehicle(IVehicle vehicle)
         {
-            throw new NotImplementedException();
+            int location = 
+        }
+        private int FindBestLocation()
+        {
+            if()
+            {
+
+            }
         }
         public IVehicle RemoveVehicle(string regNum)
         {
