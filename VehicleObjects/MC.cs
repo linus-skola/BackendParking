@@ -8,7 +8,7 @@ namespace VehicleObjects
     {
         public DateTime InTime { get; set; }
         public string RegNum { get; set; }
-        public int Size { get; set; }
+        public int Sizeee { get; set; }
 
         public MC()
         {
