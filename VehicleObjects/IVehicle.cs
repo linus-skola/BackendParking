@@ -4,7 +4,7 @@ using System.Text;
 
 namespace VehicleObjects
 {
-    public interface IVehicle
+    public interface IVehicle : ICloneable
     {
         DateTime InTime { get; set; }
         string RegNum { get; set; }

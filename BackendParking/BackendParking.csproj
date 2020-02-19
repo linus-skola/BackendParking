@@ -54,6 +54,10 @@
       <Project>{b559bbd4-a7bb-439d-8f50-c8f5b771a5ea}</Project>
       <Name>ParkingLotLogic</Name>
     </ProjectReference>
+    <ProjectReference Include="..\VehicleObjects\VehicleObjects.csproj">
+      <Project>{93f90319-b04f-41e8-9d60-c333fe37e9b8}</Project>
+      <Name>VehicleObjects</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
