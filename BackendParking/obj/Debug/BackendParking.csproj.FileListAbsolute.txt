@@ -1,0 +1,11 @@
+C:\Users\Daniel\Source\Repos\BackendParking\BackendParking\bin\Debug\BackendParking.exe.config
+C:\Users\Daniel\Source\Repos\BackendParking\BackendParking\bin\Debug\BackendParking.exe
+C:\Users\Daniel\Source\Repos\BackendParking\BackendParking\bin\Debug\BackendParking.pdb
+C:\Users\Daniel\Source\Repos\BackendParking\BackendParking\bin\Debug\ParkingLotLogic.dll
+C:\Users\Daniel\Source\Repos\BackendParking\BackendParking\bin\Debug\VehicleObjects.dll
+C:\Users\Daniel\Source\Repos\BackendParking\BackendParking\bin\Debug\ParkingLotLogic.pdb
+C:\Users\Daniel\Source\Repos\BackendParking\BackendParking\bin\Debug\VehicleObjects.pdb
+C:\Users\Daniel\Source\Repos\BackendParking\BackendParking\obj\Debug\BackendParking.csprojAssemblyReference.cache
+C:\Users\Daniel\Source\Repos\BackendParking\BackendParking\obj\Debug\BackendParking.csproj.CopyComplete
+C:\Users\Daniel\Source\Repos\BackendParking\BackendParking\obj\Debug\BackendParking.exe
+C:\Users\Daniel\Source\Repos\BackendParking\BackendParking\obj\Debug\BackendParking.pdb

@@ -1,0 +1,11 @@
+C:\Users\Daniel\Source\Repos\BackendParking\ParkingLotLogic\bin\Debug\netstandard2.0\ParkingLotLogic.deps.json
+C:\Users\Daniel\Source\Repos\BackendParking\ParkingLotLogic\bin\Debug\netstandard2.0\ParkingLotLogic.dll
+C:\Users\Daniel\Source\Repos\BackendParking\ParkingLotLogic\bin\Debug\netstandard2.0\ParkingLotLogic.pdb
+C:\Users\Daniel\Source\Repos\BackendParking\ParkingLotLogic\bin\Debug\netstandard2.0\VehicleObjects.dll
+C:\Users\Daniel\Source\Repos\BackendParking\ParkingLotLogic\bin\Debug\netstandard2.0\VehicleObjects.pdb
+C:\Users\Daniel\Source\Repos\BackendParking\ParkingLotLogic\obj\Debug\netstandard2.0\ParkingLotLogic.csprojAssemblyReference.cache
+C:\Users\Daniel\Source\Repos\BackendParking\ParkingLotLogic\obj\Debug\netstandard2.0\ParkingLotLogic.AssemblyInfoInputs.cache
+C:\Users\Daniel\Source\Repos\BackendParking\ParkingLotLogic\obj\Debug\netstandard2.0\ParkingLotLogic.AssemblyInfo.cs
+C:\Users\Daniel\Source\Repos\BackendParking\ParkingLotLogic\obj\Debug\netstandard2.0\ParkingLotLogic.csproj.CopyComplete
+C:\Users\Daniel\Source\Repos\BackendParking\ParkingLotLogic\obj\Debug\netstandard2.0\ParkingLotLogic.dll
+C:\Users\Daniel\Source\Repos\BackendParking\ParkingLotLogic\obj\Debug\netstandard2.0\ParkingLotLogic.pdb
