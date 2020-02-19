@@ -25,9 +25,38 @@ namespace ParkingLotLogic
         {
             throw new NotImplementedException();
         }
+        /// <summary>
+        /// ´Metod som flyttar ett fordon från en plats till en annan
+        /// </summary>
+        /// <param name="regNum"></param>
+        /// <param name="newLocation"></param>
+        /// <returns></returns>
         public int MoveVehicle(string regNum, int newLocation)
         {
-            throw new NotImplementedException();
+            int oldLocation = 0;
+
+            IVehicle vehicleToMove = SearchVehicle(regNum, out oldLocation);
+            RemoveVehicle(vehicleToMove.RegNum);
+
+            if (vehicleToMove != null)
+            {
+                int newSpot = AddVehicle(vehicleToMove, newLocation);
+
+                if(newSpot == -1)
+                {
+                    AddVehicle(vehicleToMove, oldLocation);
+                    return newSpot;
+                }
+                else
+                {
+                    return newSpot;
+                }
+            }
+
+            else
+            {
+                return -1;
+            }
         }
         /// <summary>
         /// Skickar tillbaka en lista av IVehicles med hjälp av Clonespot i parkingspot.
