@@ -15,6 +15,7 @@ namespace ParkingLotLogic
         internal ParkingSpot(int maxCapacity)
         {
             this.maxCapacity = maxCapacity;
+            this.currentCapacity = maxCapacity;
         }
         internal bool AddVehicle(IVehicle vehicle)
         {

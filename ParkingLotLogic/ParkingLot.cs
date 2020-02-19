@@ -28,7 +28,7 @@ namespace ParkingLotLogic
             }
             return parkingSpot;
         }
-        private int AddVehicle(IVehicle vehicle)
+        public int AddVehicle(IVehicle vehicle)
         {
             int foundSpot = -1;
             int currentSpotIndex = 1;
