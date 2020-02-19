@@ -195,23 +195,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Rikard\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Carls\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Rikard\\Source\\Repos\\BackendParking\\ParkingLotLogic\\ParkingLotLogic.csproj",
+      "projectUniqueName": "C:\\Users\\Carls\\csharpproject\\BackendParking\\ParkingLotLogic\\ParkingLotLogic.csproj",
       "projectName": "ParkingLotLogic",
-      "projectPath": "C:\\Users\\Rikard\\Source\\Repos\\BackendParking\\ParkingLotLogic\\ParkingLotLogic.csproj",
-      "packagesPath": "C:\\Users\\Rikard\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Rikard\\Source\\Repos\\BackendParking\\ParkingLotLogic\\obj\\",
+      "projectPath": "C:\\Users\\Carls\\csharpproject\\BackendParking\\ParkingLotLogic\\ParkingLotLogic.csproj",
+      "packagesPath": "C:\\Users\\Carls\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Carls\\csharpproject\\BackendParking\\ParkingLotLogic\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Rikard\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Carls\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -224,8 +220,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\Rikard\\Source\\Repos\\BackendParking\\VehicleObjects\\VehicleObjects.csproj": {
-              "projectPath": "C:\\Users\\Rikard\\Source\\Repos\\BackendParking\\VehicleObjects\\VehicleObjects.csproj"
+            "C:\\Users\\Carls\\csharpproject\\BackendParking\\VehicleObjects\\VehicleObjects.csproj": {
+              "projectPath": "C:\\Users\\Carls\\csharpproject\\BackendParking\\VehicleObjects\\VehicleObjects.csproj"
             }
           }
         }
