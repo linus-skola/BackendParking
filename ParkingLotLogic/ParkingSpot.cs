@@ -16,9 +16,18 @@ namespace ParkingLotLogic
         {
 
         }
-        internal bool AddVehicle(IVehicle vehicle)
+        internal bool AddVehicle(IVehicle vehicle, int position)
         {
-            throw new NotImplementedException();
+            if (vehicle.Size <= currentCapacity)
+            {
+                vehiclesInSpot.Add(vehicle);
+                currentCapacity -= vehicle.Size;
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
         internal IVehicle RemoveVehicle(string regNum)
         {
