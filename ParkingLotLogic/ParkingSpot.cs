@@ -11,7 +11,9 @@ namespace ParkingLotLogic
         int currentCapacity { get; set; }
 
         List<IVehicle> vehiclesInSpot = new List<IVehicle>();
-
+        /// <summary>
+        /// Standard car sized parkingspot.
+        /// </summary>
         internal ParkingSpot()
         {
 
