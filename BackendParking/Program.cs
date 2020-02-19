@@ -15,7 +15,8 @@ namespace BackendParking
 
             ParkingLot parking = new ParkingLot();
             parking.AddParkingSpot(100, 10);
-            
+
+            TestOptimize(parking);
 
         }
 
@@ -26,16 +27,25 @@ namespace BackendParking
             Console.ReadKey();
             TestMoveVehcle(parking, car, 20);
         }
-        private static void TestAddAndMoveAlot(ParkingLot parking)
+        private static void TestOptimize(ParkingLot parking)
         {
             for (int i = 0; i < 20; i++)
             {
                 Car car = new Car(DateTime.Now, "test" + i, 10);
                 int location = parking.AddVehicle(car);
-                TestMoveVehcle(parking, car, 20);
+                Random random = new Random();
+                TestMoveVehcle(parking, car, random.Next(5,100));
 
             }
-    
+            List<string> orders = parking.OptimizeParkingLot();
+            foreach (string item in orders)
+            {
+                Console.WriteLine(item);
+
+            }
+            Console.ReadKey();
+
+
         }
 
         private static void TestAddAndremove(ParkingLot parking)
