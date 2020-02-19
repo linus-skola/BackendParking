@@ -4,7 +4,15 @@ using System.Text;
 
 namespace VehicleObjects
 {
-    class MC
+    public class MC : IVehicle
     {
+        public DateTime InTime { get; set; }
+        public string RegNum { get; set; }
+        public int Size { get; set; }
+
+        public MC()
+        {
+            Size = 5;
+        }
     }
 }
