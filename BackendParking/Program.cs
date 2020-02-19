@@ -10,6 +10,7 @@ namespace BackendParking
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Hej");
         }
     }
 }
