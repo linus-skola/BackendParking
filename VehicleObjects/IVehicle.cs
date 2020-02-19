@@ -6,6 +6,7 @@ namespace VehicleObjects
 {
     public interface IVehicle : ICloneable
     {
+        Enum VehicleType { get; }
         DateTime InTime { get; }
         string RegNum { get;  }
         int Size { get; }
