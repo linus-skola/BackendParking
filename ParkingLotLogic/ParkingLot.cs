@@ -30,15 +30,20 @@ namespace ParkingLotLogic
         }
         public int AddVehicle(IVehicle vehicle)
         {
+            return FindSpot(vehicle, pSpot => pSpot.AddVehicle(vehicle));
+        }
+
+        internal int FindSpot(IVehicle vehicle, Action<ParkingSpot> toDoWithSpot)
+        {
             int foundSpot = -1;
-            int currentSpotIndex = 1;
+            int currentSpotIndex = 0;
             int vehicleSize = vehicle.Size;
             foreach (ParkingSpot pSpot in parkingSpots)
             {
-                if(pSpot.currentCapacity >= vehicleSize)
+                if (pSpot.currentCapacity >= vehicleSize)
                 {
                     foundSpot = currentSpotIndex;
-                    pSpot.AddVehicle(vehicle);
+                    toDoWithSpot(pSpot);
                     break;
                 }
                 currentSpotIndex++;
@@ -46,6 +51,7 @@ namespace ParkingLotLogic
 
             return foundSpot;
         }
+
         public IVehicle RemoveVehicle(string regNum)
         {
             int location = 0;
@@ -126,17 +132,20 @@ namespace ParkingLotLogic
             for (int i = parkingSpots.Count - 1; i >= 0; i--)
             {
                 ParkingSpot parkingSpot = parkingSpots[i];
-                foreach (var vehicle in parkingSpot.vehiclesInSpot)
+                for (int y = 0; y < parkingSpot.vehiclesInSpot.Count; y++)
                 {
+                    var vehicle = parkingSpot.vehiclesInSpot[y];
+
                     // kollar bästa möjliga plats att flytta varje fordon.
-                    int moveLocation = AddVehicle(vehicle);
+
+                    int moveLocation = FindSpot(vehicle, x => x.ToString());
                     if (moveLocation < i)
                     {
                         RemoveVehicle(vehicle.RegNum);
                         AddVehicle(vehicle, moveLocation);
                         string orderMessage = String.Format($"Flytta fordon med regnummer {vehicle.RegNum} från plats {i} till plats {moveLocation}");
                         orderMessages.Add(orderMessage);
-
+                        y--;
                     }
                     else
                     {

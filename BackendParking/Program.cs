@@ -17,6 +17,7 @@ namespace BackendParking
             parking.AddParkingSpot(100, 10);
 
             TestOptimize(parking);
+            //TestAddManyVehcle(parking);
 
         }
 
@@ -24,7 +25,6 @@ namespace BackendParking
         {
             Car car = new Car(DateTime.Now, "test", 10);
             int location = parking.AddVehicle(car);
-            Console.ReadKey();
             TestMoveVehcle(parking, car, 20);
         }
         private static void TestOptimize(ParkingLot parking)
@@ -33,8 +33,10 @@ namespace BackendParking
             {
                 Car car = new Car(DateTime.Now, "test" + i, 10);
                 int location = parking.AddVehicle(car);
+                Console.WriteLine($"Parkerade ny {car.VehicleType.ToString()} till plats {location}.");
+
                 Random random = new Random();
-                TestMoveVehcle(parking, car, random.Next(5,100));
+                TestMoveVehcle(parking, car, 50+i);
 
             }
             List<string> orders = parking.OptimizeParkingLot();
@@ -66,6 +68,26 @@ namespace BackendParking
             Console.WriteLine(location);
             return car;
         }
+        private static void TestAddManyVehcle(ParkingLot parking)
+        {
+            Console.WriteLine("Hej");
+            for (int i = 0; i < 10; i++)
+            {
+                Car car = new Car(DateTime.Now, "test" + i, 10);
+                int location = parking.AddVehicle(car);
+                Console.WriteLine(location);
+                if (i <= 5)
+                {
+                    TestRemoveVehcle(parking, car);
+
+                }
+                else
+                {
+                    TestMoveVehcle(parking, car, i + 30);
+                }
+
+            }
+        }
         private static void TestRemoveVehcle(ParkingLot parking, IVehicle vehicle)
         {
             IVehicle removedVehcle = parking.RemoveVehicle(vehicle.RegNum);
@@ -77,7 +99,7 @@ namespace BackendParking
         {
             
             int moveToPosition = parking.MoveVehicle(vehicle.RegNum, position);
-            Console.WriteLine(moveToPosition);
+            Console.WriteLine($"flyttade till plats {moveToPosition}.");
         }
     }
 }
