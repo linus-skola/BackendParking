@@ -17,25 +17,21 @@ namespace ParkingLotLogic
         {
             location = parkingSpots[parkingSpot].AddVehicle(vehicle);
         }
-        private int FindBestSpot(int parkingSpot, ) // type of vehicle
+        private int FindBestSpot(int parkingSpot, int vehicleSize)
         {
+            int foundSpot = -1;
+            int currentSpotIndex = 0;
             foreach(ParkingSpot pspot in parkingSpots)
             {
-
+                if(pspot.currentCapacity >= vehicleSize)
+                {
+                    foundSpot = currentSpotIndex;
+                    break;
+                }
+                currentSpotIndex++;
             }
 
-
-            //
-            // 
-            // vehicleTypeLocaitonTwo = locationTwoVehicle.typeEnum
-            // if(vehicleTypeLocationOne == enum.car || )
-            //{
-            //  return -1;
-            //}
-            //else if()
-            //{
-            //  
-            //}
+            return foundSpot;
         }
         public IVehicle RemoveVehicle(string regNum)
         {
