@@ -25,11 +25,11 @@ namespace ParkingLotLogic
         private int AddVehicle(IVehicle vehicle)
         {
             int foundSpot = -1;
-            int currentSpotIndex = 0;
+            int currentSpotIndex = 1;
             int vehicleSize = vehicle.Size;
-            foreach (ParkingSpot pspot in parkingSpots)
+            foreach (ParkingSpot pSpot in parkingSpots)
             {
-                if(pspot.currentCapacity >= vehicleSize)
+                if(pSpot.currentCapacity >= vehicleSize)
                 {
                     foundSpot = currentSpotIndex;
                     break;
@@ -50,7 +50,10 @@ namespace ParkingLotLogic
         }
         public IVehicle SearchVehicle(string regNum, out int location)
         {
-            
+            foreach(ParkingSpot pSpot in parkingSpots)
+            {
+                if(pSpot.)
+            }
         }
         public int MoveVehicle(string regNum, int newLocation)
         {

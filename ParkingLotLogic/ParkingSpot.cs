@@ -33,9 +33,22 @@ namespace ParkingLotLogic
         {
             throw new NotImplementedException();
         }
-        internal bool FindVehicle(string regNum)
+        internal (IVehicle, int) FindVehicle(string regNum)
         {
-            throw new NotImplementedException();
+            int foundAtIndex = -1;
+            IVehicle foundVehicle = null;
+            int currentIndex = 0;
+            foreach (IVehicle vehicle in vehiclesInSpot)
+            {
+                if(vehicle.RegNum == regNum)
+                {
+                    foundVehicle = vehicle;
+                    foundAtIndex = currentIndex; 
+                    break;
+                }
+                currentIndex++;
+            }
+            return (foundVehicle, foundAtIndex);
         }
 
         internal object CloneSpot()
