@@ -21,7 +21,7 @@ namespace ParkingLotLogic
         /// <returns></returns>
         public int AddVehicle(IVehicle vehicle, int parkingSpot)
         {
-            bool sucssesfullAdd = parkingSpots[parkingSpot].AddVehicle(vehicle, parkingSpot);
+            bool sucssesfullAdd = parkingSpots[parkingSpot].AddVehicle(vehicle);
             if (sucssesfullAdd == false)
             {
                 parkingSpot = -1;
@@ -38,6 +38,11 @@ namespace ParkingLotLogic
                 if(pSpot.currentCapacity >= vehicleSize)
                 {
                     foundSpot = currentSpotIndex;
+                    bool sucssesfullAdd = parkingSpots[foundSpot].AddVehicle(vehicle);
+                    if(!sucssesfullAdd)
+                    {
+                        foundSpot = -1;
+                    }
                     break;
                 }
                 currentSpotIndex++;

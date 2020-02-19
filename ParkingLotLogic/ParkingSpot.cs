@@ -16,7 +16,7 @@ namespace ParkingLotLogic
         {
             this.maxCapacity = maxCapacity;
         }
-        internal bool AddVehicle(IVehicle vehicle, int position)
+        internal bool AddVehicle(IVehicle vehicle)
         {
             if (vehicle.Size <= currentCapacity)
             {
