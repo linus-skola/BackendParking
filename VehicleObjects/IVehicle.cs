@@ -6,9 +6,9 @@ namespace VehicleObjects
 {
     public interface IVehicle : ICloneable
     {
-        DateTime InTime { get; set; }
-        string RegNum { get; set; }
-        int Size { get; set; }
+        DateTime InTime { get; }
+        string RegNum { get;  }
+        int Size { get; }
 
     }
 }

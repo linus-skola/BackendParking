@@ -6,13 +6,26 @@ namespace VehicleObjects
 {
     public class MC : IVehicle
     {
-        public DateTime InTime { get; set; }
-        public string RegNum { get; set; }
-        public int Size { get; set; }
+        public DateTime InTime { get; }
+        public string RegNum { get; }
+        public int Size { get; }
 
         public MC()
         {
             Size = 5;
+        }
+        public MC(DateTime inTime, string regNum, int size)
+        {
+            InTime = inTime;
+            RegNum = regNum;
+            Size = size;
+        }
+
+        public object Clone()
+        {
+            return new Car(DateTime.Parse(InTime.ToString()),
+                           (string)RegNum.Clone(),
+                           Size);
         }
     }
 }
