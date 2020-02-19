@@ -32,8 +32,14 @@ namespace ParkingLotLogic
         internal IVehicle RemoveVehicle(string regNum)
         {
             var result = FindVehicle(regNum);
-            int spotIndex = result.Item1;
-            vehiclesInSpot.Remove(spotIndex);
+            IVehicle vehicle = result.Item1;
+            int spotIndex = result.Item2;
+            if (spotIndex != -1)
+            {
+                vehicle = vehiclesInSpot[spotIndex];
+                vehiclesInSpot.Remove(spotIndex);
+            }
+            return vehicle;
         }
         internal (IVehicle, int) FindVehicle(string regNum)
         {
