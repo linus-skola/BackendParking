@@ -22,7 +22,7 @@ namespace ParkingLotLogic
             }
             return parkingSpot;
         }
-        private int FindBestSpot(int vehicleSize)
+        private int AddVehicle(int vehicleSize)
         {
             int foundSpot = -1;
             int currentSpotIndex = 0;
