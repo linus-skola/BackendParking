@@ -56,10 +56,19 @@ namespace ParkingLotLogic
         }
         public IVehicle SearchVehicle(string regNum, out int location)
         {
+            IVehicle foundVehicle = null;
             foreach(ParkingSpot pSpot in parkingSpots)
             {
-                if(pSpot.)
+                var result = pSpot.FindVehicle(regNum);
+                int inSpotLocation = result.Item2;
+                if (inSpotLocation > -1)
+                {
+                    foundVehicle = result.Item1;
+                    break;
+                }
             }
+
+            return foundVehicle;
         }
         public int MoveVehicle(string regNum, int newLocation)
         {
