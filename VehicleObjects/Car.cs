@@ -9,7 +9,7 @@ namespace VehicleObjects
         public DateTime InTime { get; }
         public string RegNum { get; }
         public int Size { get; }
-
+        public VehicleType VehicleType { get; }
         public Car()
         {
             Size = 10;
@@ -20,6 +20,7 @@ namespace VehicleObjects
             InTime = inTime;
             RegNum = regNum;
             Size = size;
+            VehicleType = VehicleType.CAR;
         }
 
         public object Clone()

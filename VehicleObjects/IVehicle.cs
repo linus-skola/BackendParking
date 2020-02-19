@@ -9,6 +9,7 @@ namespace VehicleObjects
         DateTime InTime { get; }
         string RegNum { get;  }
         int Size { get; }
-
+        VehicleType VehicleType { get; }
+        
     }
 }
