@@ -15,15 +15,17 @@ namespace BackendParking
 
             ParkingLot parking = new ParkingLot();
             parking.AddParkingSpot(100, 10);
-
-            TestOptimize(parking);
+            TestAddVehcle(parking);
+            int location;
+            TestMoveVehcle(parking, parking.SearchVehicle("test", out location), 2);
             //TestAddManyVehcle(parking);
+            //TestOptimize(parking);
 
         }
 
         private static void TestAddAndMove(ParkingLot parking)
         {
-            Car car = new Car(DateTime.Now, "test", 10);
+            Car car = new Car(DateTime.Now, "test");
             int location = parking.AddVehicle(car);
             TestMoveVehcle(parking, car, 20);
         }
@@ -31,7 +33,7 @@ namespace BackendParking
         {
             for (int i = 0; i < 20; i++)
             {
-                Car car = new Car(DateTime.Now, "test" + i, 10);
+                Car car = new Car(DateTime.Now, "test" + i);
                 int location = parking.AddVehicle(car);
                 Console.WriteLine($"Parkerade ny {car.VehicleType.ToString()} till plats {location}.");
 
@@ -62,7 +64,7 @@ namespace BackendParking
         {
             Console.WriteLine("Hej");
 
-            Car car = new Car(DateTime.Now, "test", 10);
+            Car car = new Car(DateTime.Now, "test");
             int location = parking.AddVehicle(car);
 
             Console.WriteLine(location);
@@ -73,7 +75,7 @@ namespace BackendParking
             Console.WriteLine("Hej");
             for (int i = 0; i < 10; i++)
             {
-                Car car = new Car(DateTime.Now, "test" + i, 10);
+                Car car = new Car(DateTime.Now, "test" + i);
                 int location = parking.AddVehicle(car);
                 Console.WriteLine(location);
                 if (i <= 5)

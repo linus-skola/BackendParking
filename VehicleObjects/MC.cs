@@ -15,19 +15,18 @@ namespace VehicleObjects
         {
             Size = 5;
         }
-        public MC(DateTime inTime, string regNum, int size)
+        public MC(DateTime inTime, string regNum)
         {
             InTime = inTime;
             RegNum = regNum;
-            Size = size;
+            Size = 5;
             VehicleType = VehicleType.CM;
         }
 
         public object Clone()
         {
-            return new Car(DateTime.Parse(InTime.ToString()),
-                           (string)RegNum.Clone(),
-                           Size);
+            return new MC(DateTime.Parse(InTime.ToString()),
+                           (string)RegNum.Clone());
         }
     }
 }

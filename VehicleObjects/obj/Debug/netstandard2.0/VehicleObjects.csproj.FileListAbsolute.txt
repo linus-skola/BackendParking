@@ -6,3 +6,11 @@ C:\Users\Daniel\Source\Repos\BackendParking\VehicleObjects\obj\Debug\netstandard
 C:\Users\Daniel\Source\Repos\BackendParking\VehicleObjects\obj\Debug\netstandard2.0\VehicleObjects.AssemblyInfo.cs
 C:\Users\Daniel\Source\Repos\BackendParking\VehicleObjects\obj\Debug\netstandard2.0\VehicleObjects.dll
 C:\Users\Daniel\Source\Repos\BackendParking\VehicleObjects\obj\Debug\netstandard2.0\VehicleObjects.pdb
+C:\Users\Rikard\Source\Repos\BackendParking\VehicleObjects\bin\Debug\netstandard2.0\VehicleObjects.deps.json
+C:\Users\Rikard\Source\Repos\BackendParking\VehicleObjects\bin\Debug\netstandard2.0\VehicleObjects.dll
+C:\Users\Rikard\Source\Repos\BackendParking\VehicleObjects\bin\Debug\netstandard2.0\VehicleObjects.pdb
+C:\Users\Rikard\Source\Repos\BackendParking\VehicleObjects\obj\Debug\netstandard2.0\VehicleObjects.csprojAssemblyReference.cache
+C:\Users\Rikard\Source\Repos\BackendParking\VehicleObjects\obj\Debug\netstandard2.0\VehicleObjects.AssemblyInfoInputs.cache
+C:\Users\Rikard\Source\Repos\BackendParking\VehicleObjects\obj\Debug\netstandard2.0\VehicleObjects.AssemblyInfo.cs
+C:\Users\Rikard\Source\Repos\BackendParking\VehicleObjects\obj\Debug\netstandard2.0\VehicleObjects.dll
+C:\Users\Rikard\Source\Repos\BackendParking\VehicleObjects\obj\Debug\netstandard2.0\VehicleObjects.pdb

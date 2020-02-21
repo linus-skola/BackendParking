@@ -9,3 +9,14 @@ C:\Users\Daniel\Source\Repos\BackendParking\BackendParking\obj\Debug\BackendPark
 C:\Users\Daniel\Source\Repos\BackendParking\BackendParking\obj\Debug\BackendParking.csproj.CopyComplete
 C:\Users\Daniel\Source\Repos\BackendParking\BackendParking\obj\Debug\BackendParking.exe
 C:\Users\Daniel\Source\Repos\BackendParking\BackendParking\obj\Debug\BackendParking.pdb
+C:\Users\Rikard\Source\Repos\BackendParking\BackendParking\bin\Debug\BackendParking.exe.config
+C:\Users\Rikard\Source\Repos\BackendParking\BackendParking\bin\Debug\BackendParking.exe
+C:\Users\Rikard\Source\Repos\BackendParking\BackendParking\bin\Debug\BackendParking.pdb
+C:\Users\Rikard\Source\Repos\BackendParking\BackendParking\bin\Debug\ParkingLotLogic.dll
+C:\Users\Rikard\Source\Repos\BackendParking\BackendParking\bin\Debug\VehicleObjects.dll
+C:\Users\Rikard\Source\Repos\BackendParking\BackendParking\bin\Debug\ParkingLotLogic.pdb
+C:\Users\Rikard\Source\Repos\BackendParking\BackendParking\bin\Debug\VehicleObjects.pdb
+C:\Users\Rikard\Source\Repos\BackendParking\BackendParking\obj\Debug\BackendParking.csprojAssemblyReference.cache
+C:\Users\Rikard\Source\Repos\BackendParking\BackendParking\obj\Debug\BackendParking.csproj.CopyComplete
+C:\Users\Rikard\Source\Repos\BackendParking\BackendParking\obj\Debug\BackendParking.exe
+C:\Users\Rikard\Source\Repos\BackendParking\BackendParking\obj\Debug\BackendParking.pdb
