@@ -7,7 +7,7 @@ namespace ParkingLotLogic
 {
     public class ParkingLot
     {
-        List<ParkingSpot> parkingSpots = new List<ParkingSpot>();
+        private List<ParkingSpot> parkingSpots = new List<ParkingSpot>();
 
         public ParkingLot()
         {
@@ -143,7 +143,7 @@ namespace ParkingLotLogic
                     {
                         RemoveVehicle(vehicle.RegNum);
                         AddVehicle(vehicle, moveLocation);
-                        string orderMessage = String.Format($"Flytta fordon med regnummer {vehicle.RegNum} från plats {i} till plats {moveLocation}");
+                        string orderMessage = String.Format($"Flytta fordon med regnummer {vehicle.RegNum} från plats {i} till plats {moveLocation + 1}");
                         orderMessages.Add(orderMessage);
                         y--;
                     }

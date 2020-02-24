@@ -19,7 +19,8 @@ namespace BackendParking
             int location;
             TestMoveVehcle(parking, parking.SearchVehicle("test", out location), 2);
             //TestAddManyVehcle(parking);
-            //TestOptimize(parking);
+            TestOptimize(parking);
+            Console.ReadKey();
 
         }
 
@@ -35,7 +36,7 @@ namespace BackendParking
             {
                 Car car = new Car(DateTime.Now, "test" + i);
                 int location = parking.AddVehicle(car);
-                Console.WriteLine($"Parkerade ny {car.VehicleType.ToString()} till plats {location}.");
+                Console.WriteLine($"Parkerade ny {car.VehicleType.ToString()} till plats {location+1}.");
 
                 Random random = new Random();
                 TestMoveVehcle(parking, car, 50+i);
