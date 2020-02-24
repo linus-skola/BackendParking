@@ -6,10 +6,10 @@ using VehicleObjects;
 namespace TestingBackendParking
 {
     [TestClass]
-    public class UnitTest1
+    public partial class UnitTesting
     {
         [TestMethod]
-        public void TestMethod1()
+        public void CarlsTestMethod()
         {
             
         }
