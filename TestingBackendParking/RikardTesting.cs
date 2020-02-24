@@ -12,7 +12,7 @@ namespace TestingBackendParking
         [TestMethod]
         public void RikardsTestMethod()
         {
-
+            Console.WriteLine("Hej");
         }
 
     }
