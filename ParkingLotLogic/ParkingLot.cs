@@ -183,5 +183,14 @@ namespace ParkingLotLogic
                 return false;
             }
         }
+        public int Count()
+        {
+            int counter = 0;
+            foreach(var item in parkingSpots)
+            {
+                counter++;
+            }
+            return counter;
+        }
     }
 }
