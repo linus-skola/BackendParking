@@ -9,9 +9,9 @@ namespace TestingBackendParking
     public class LinneaTesting
     {
         // Cars
-        [DataRow("aaa", 1)]
-        [DataRow("bbb", 1)]
-        [DataRow("ccc", 1)]
+        [DataRow("aaa", 0)]
+        [DataRow("bbb", 0)]
+        [DataRow("ccc", 0)]
 
         [TestMethod]
         public void TestAddCarParkingLot(string regNr, int expectedSpot)
@@ -25,9 +25,10 @@ namespace TestingBackendParking
             Assert.AreEqual(spot, expectedSpot);
         }
 
-        [DataRow("aaa", 1)]
-        [DataRow("bbb", 1)]
-        [DataRow("ccc", 1)]
+        // Mc's
+        [DataRow("aaa", 0)]
+        [DataRow("bbb", 0)]
+        [DataRow("ccc", 0)]
         [TestMethod]
         public void TestAddMcParkingLot(string regNr, int expectedSpot)
         {
@@ -40,8 +41,7 @@ namespace TestingBackendParking
             Assert.AreEqual(spot, expectedSpot);
         }
 
-        [DataRow("aaa", 1)]
-        [DataRow("bbb", 2)]
+        [DataRow("aaa", "bbb", 5)]
         [TestMethod]
         public void TestAddTwoMcAtSameSpotParkingLot(string firstRegNr, string secondRegNr, int expectedSpot)
         {
@@ -50,12 +50,11 @@ namespace TestingBackendParking
 
             MC c = new MC(DateTime.Now, firstRegNr);
             MC mc = new MC(DateTime.Now, secondRegNr);
-            int spot = pLot.AddVehicle(c, 5);
-            pLot.AddVehicle(mc, 5);
+            int spotFirst = pLot.AddVehicle(c, 5);
+            int spotSecond = pLot.AddVehicle(mc, 5);
 
             // Check vehicles at parkinglot
-
-            Assert.AreEqual(spot, expectedSpot);
+            Assert.AreEqual(spotFirst, expectedSpot);
         }
 
         [TestMethod]

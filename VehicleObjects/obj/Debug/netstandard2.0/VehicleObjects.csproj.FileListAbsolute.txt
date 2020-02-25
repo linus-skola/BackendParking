@@ -22,3 +22,12 @@ C:\Projects\BackendParking\VehicleObjects\obj\Debug\netstandard2.0\VehicleObject
 C:\Projects\BackendParking\VehicleObjects\obj\Debug\netstandard2.0\VehicleObjects.AssemblyInfo.cs
 C:\Projects\BackendParking\VehicleObjects\obj\Debug\netstandard2.0\VehicleObjects.dll
 C:\Projects\BackendParking\VehicleObjects\obj\Debug\netstandard2.0\VehicleObjects.pdb
+C:\Users\lism501\Source\Repos\linus-skola\BackendParking\VehicleObjects\bin\Debug\netstandard2.0\VehicleObjects.deps.json
+C:\Users\lism501\Source\Repos\linus-skola\BackendParking\VehicleObjects\bin\Debug\netstandard2.0\VehicleObjects.dll
+C:\Users\lism501\Source\Repos\linus-skola\BackendParking\VehicleObjects\bin\Debug\netstandard2.0\VehicleObjects.pdb
+C:\Users\lism501\Source\Repos\linus-skola\BackendParking\VehicleObjects\obj\Debug\netstandard2.0\VehicleObjects.csprojAssemblyReference.cache
+C:\Users\lism501\Source\Repos\linus-skola\BackendParking\VehicleObjects\obj\Debug\netstandard2.0\VehicleObjects.csproj.CoreCompileInputs.cache
+C:\Users\lism501\Source\Repos\linus-skola\BackendParking\VehicleObjects\obj\Debug\netstandard2.0\VehicleObjects.AssemblyInfoInputs.cache
+C:\Users\lism501\Source\Repos\linus-skola\BackendParking\VehicleObjects\obj\Debug\netstandard2.0\VehicleObjects.AssemblyInfo.cs
+C:\Users\lism501\Source\Repos\linus-skola\BackendParking\VehicleObjects\obj\Debug\netstandard2.0\VehicleObjects.dll
+C:\Users\lism501\Source\Repos\linus-skola\BackendParking\VehicleObjects\obj\Debug\netstandard2.0\VehicleObjects.pdb
