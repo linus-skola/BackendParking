@@ -15,7 +15,14 @@ namespace TestingBackendParking
         [TestMethod]
         public void TestAddVehicleParkingLot()
         {
-            Assert.Inconclusive();
+            int expectedSpot = 1;
+            ParkingLot pLot = new ParkingLot();
+            pLot.AddParkingSpot(100, 10);
+
+            Car c = new Car(DateTime.Now, "aaa");
+            int spot = pLot.AddVehicle(c);
+
+            Assert.AreEqual(spot, expectedSpot);
         }
 
         [TestMethod]
