@@ -53,6 +53,7 @@
     <Compile Include="RikardTesting.cs" />
     <Compile Include="CarlTesting.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="LinneaTesting.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
