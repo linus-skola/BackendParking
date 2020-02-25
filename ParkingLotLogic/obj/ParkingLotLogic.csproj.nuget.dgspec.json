@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lism501\\Source\\Repos\\linus-skola\\BackendParking\\ParkingLotLogic\\ParkingLotLogic.csproj": {}
+    "C:\\Users\\Rikard\\Source\\Repos\\BackendParkingREALTEST\\ParkingLotLogic\\ParkingLotLogic.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lism501\\Source\\Repos\\linus-skola\\BackendParking\\ParkingLotLogic\\ParkingLotLogic.csproj": {
+    "C:\\Users\\Rikard\\Source\\Repos\\BackendParkingREALTEST\\ParkingLotLogic\\ParkingLotLogic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lism501\\Source\\Repos\\linus-skola\\BackendParking\\ParkingLotLogic\\ParkingLotLogic.csproj",
+        "projectUniqueName": "C:\\Users\\Rikard\\Source\\Repos\\BackendParkingREALTEST\\ParkingLotLogic\\ParkingLotLogic.csproj",
         "projectName": "ParkingLotLogic",
-        "projectPath": "C:\\Users\\lism501\\Source\\Repos\\linus-skola\\BackendParking\\ParkingLotLogic\\ParkingLotLogic.csproj",
-        "packagesPath": "C:\\Users\\lism501\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lism501\\Source\\Repos\\linus-skola\\BackendParking\\ParkingLotLogic\\obj\\",
+        "projectPath": "C:\\Users\\Rikard\\Source\\Repos\\BackendParkingREALTEST\\ParkingLotLogic\\ParkingLotLogic.csproj",
+        "packagesPath": "C:\\Users\\Rikard\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Rikard\\Source\\Repos\\BackendParkingREALTEST\\ParkingLotLogic\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\lism501\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Rikard\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -30,8 +30,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\lism501\\Source\\Repos\\linus-skola\\BackendParking\\VehicleObjects\\VehicleObjects.csproj": {
-                "projectPath": "C:\\Users\\lism501\\Source\\Repos\\linus-skola\\BackendParking\\VehicleObjects\\VehicleObjects.csproj"
+              "C:\\Users\\Rikard\\Source\\Repos\\BackendParkingREALTEST\\VehicleObjects\\VehicleObjects.csproj": {
+                "projectPath": "C:\\Users\\Rikard\\Source\\Repos\\BackendParkingREALTEST\\VehicleObjects\\VehicleObjects.csproj"
               }
             }
           }
@@ -53,27 +53,33 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\lism501\\Source\\Repos\\linus-skola\\BackendParking\\VehicleObjects\\VehicleObjects.csproj": {
+    "C:\\Users\\Rikard\\Source\\Repos\\BackendParkingREALTEST\\VehicleObjects\\VehicleObjects.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lism501\\Source\\Repos\\linus-skola\\BackendParking\\VehicleObjects\\VehicleObjects.csproj",
+        "projectUniqueName": "C:\\Users\\Rikard\\Source\\Repos\\BackendParkingREALTEST\\VehicleObjects\\VehicleObjects.csproj",
         "projectName": "VehicleObjects",
-        "projectPath": "C:\\Users\\lism501\\Source\\Repos\\linus-skola\\BackendParking\\VehicleObjects\\VehicleObjects.csproj",
-        "packagesPath": "C:\\Users\\lism501\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lism501\\Source\\Repos\\linus-skola\\BackendParking\\VehicleObjects\\obj\\",
+        "projectPath": "C:\\Users\\Rikard\\Source\\Repos\\BackendParkingREALTEST\\VehicleObjects\\VehicleObjects.csproj",
+        "packagesPath": "C:\\Users\\Rikard\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Rikard\\Source\\Repos\\BackendParkingREALTEST\\VehicleObjects\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\lism501\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Rikard\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -105,10 +111,16 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
