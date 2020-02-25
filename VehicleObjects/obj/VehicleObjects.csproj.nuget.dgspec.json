@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Rikard\\Source\\Repos\\BackendParkingRealTest\\VehicleObjects\\VehicleObjects.csproj": {}
+    "C:\\Users\\Carls\\Source\\Repos\\BackendParking\\VehicleObjects\\VehicleObjects.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Rikard\\Source\\Repos\\BackendParkingRealTest\\VehicleObjects\\VehicleObjects.csproj": {
+    "C:\\Users\\Carls\\Source\\Repos\\BackendParking\\VehicleObjects\\VehicleObjects.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Rikard\\Source\\Repos\\BackendParkingRealTest\\VehicleObjects\\VehicleObjects.csproj",
+        "projectUniqueName": "C:\\Users\\Carls\\Source\\Repos\\BackendParking\\VehicleObjects\\VehicleObjects.csproj",
         "projectName": "VehicleObjects",
-        "projectPath": "C:\\Users\\Rikard\\Source\\Repos\\BackendParkingRealTest\\VehicleObjects\\VehicleObjects.csproj",
-        "packagesPath": "C:\\Users\\Rikard\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Rikard\\Source\\Repos\\BackendParkingRealTest\\VehicleObjects\\obj\\",
+        "projectPath": "C:\\Users\\Carls\\Source\\Repos\\BackendParking\\VehicleObjects\\VehicleObjects.csproj",
+        "packagesPath": "C:\\Users\\Carls\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Carls\\Source\\Repos\\BackendParking\\VehicleObjects\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Rikard\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Carls\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
