@@ -43,3 +43,14 @@ C:\Users\lism501\Source\Repos\linus-skola\BackendParking\ParkingLotLogic\obj\Deb
 C:\Users\lism501\Source\Repos\linus-skola\BackendParking\ParkingLotLogic\obj\Debug\netstandard2.0\ParkingLotLogic.csproj.CopyComplete
 C:\Users\lism501\Source\Repos\linus-skola\BackendParking\ParkingLotLogic\obj\Debug\netstandard2.0\ParkingLotLogic.dll
 C:\Users\lism501\Source\Repos\linus-skola\BackendParking\ParkingLotLogic\obj\Debug\netstandard2.0\ParkingLotLogic.pdb
+C:\Users\Linnea\Source\Repos\linus-skola\BackendParking\ParkingLotLogic\bin\Debug\netstandard2.0\ParkingLotLogic.deps.json
+C:\Users\Linnea\Source\Repos\linus-skola\BackendParking\ParkingLotLogic\bin\Debug\netstandard2.0\ParkingLotLogic.dll
+C:\Users\Linnea\Source\Repos\linus-skola\BackendParking\ParkingLotLogic\bin\Debug\netstandard2.0\ParkingLotLogic.pdb
+C:\Users\Linnea\Source\Repos\linus-skola\BackendParking\ParkingLotLogic\bin\Debug\netstandard2.0\VehicleObjects.dll
+C:\Users\Linnea\Source\Repos\linus-skola\BackendParking\ParkingLotLogic\bin\Debug\netstandard2.0\VehicleObjects.pdb
+C:\Users\Linnea\Source\Repos\linus-skola\BackendParking\ParkingLotLogic\obj\Debug\netstandard2.0\ParkingLotLogic.csprojAssemblyReference.cache
+C:\Users\Linnea\Source\Repos\linus-skola\BackendParking\ParkingLotLogic\obj\Debug\netstandard2.0\ParkingLotLogic.AssemblyInfoInputs.cache
+C:\Users\Linnea\Source\Repos\linus-skola\BackendParking\ParkingLotLogic\obj\Debug\netstandard2.0\ParkingLotLogic.AssemblyInfo.cs
+C:\Users\Linnea\Source\Repos\linus-skola\BackendParking\ParkingLotLogic\obj\Debug\netstandard2.0\ParkingLotLogic.csproj.CopyComplete
+C:\Users\Linnea\Source\Repos\linus-skola\BackendParking\ParkingLotLogic\obj\Debug\netstandard2.0\ParkingLotLogic.dll
+C:\Users\Linnea\Source\Repos\linus-skola\BackendParking\ParkingLotLogic\obj\Debug\netstandard2.0\ParkingLotLogic.pdb

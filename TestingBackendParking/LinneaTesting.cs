@@ -22,7 +22,7 @@ namespace TestingBackendParking
             Car c = new Car(DateTime.Now, regNr);
             int spot = pLot.AddVehicle(c);
 
-            Assert.AreEqual(spot, expectedSpot);
+            Assert.AreEqual(expectedSpot, spot);
         }
 
         // Mc's
@@ -38,7 +38,7 @@ namespace TestingBackendParking
             MC c = new MC(DateTime.Now, regNr);
             int spot = pLot.AddVehicle(c);
 
-            Assert.AreEqual(spot, expectedSpot);
+            Assert.AreEqual(expectedSpot, spot);
         }
 
         [DataRow("aaa", "bbb", 5)]
@@ -54,25 +54,35 @@ namespace TestingBackendParking
             int spotSecond = pLot.AddVehicle(mc, 5);
 
             // Check vehicles at parkinglot
-            Assert.AreEqual(spotFirst, expectedSpot);
+            Assert.AreEqual(expectedSpot, spotFirst);
         }
 
+        [DataRow("aaa")]
         [TestMethod]
-        public void TestFindSpotParkingLot()
+        public void TestRemoveVehicleParkingLot(string regNr)
         {
-            Assert.Inconclusive();
+            ParkingLot pLot = new ParkingLot();
+            pLot.AddParkingSpot(100, 10);
+
+            MC expectedMc = new MC(DateTime.Now, regNr);
+            pLot.AddVehicle(expectedMc);
+            IVehicle actualMc = pLot.RemoveVehicle(expectedMc.RegNum);
+
+            Assert.AreEqual(expectedMc, actualMc);
         }
 
+        [DataRow("aaa")]
         [TestMethod]
-        public void TestRemoveVehicleParkingLot()
+        public void TestSearchVehicleParkingLot(string regNr)
         {
-            Assert.Inconclusive();
-        }
+            ParkingLot pLot = new ParkingLot();
+            pLot.AddParkingSpot(100, 10);
 
-        [TestMethod]
-        public void TestSearchVehicleParkingLot()
-        {
-            Assert.Inconclusive();
+            MC expectedMc = new MC(DateTime.Now, regNr);
+            pLot.AddVehicle(expectedMc);
+            IVehicle vehicle = pLot.SearchVehicle(expectedMc.RegNum, out int location);
+
+            Assert.AreEqual(expectedMc, vehicle);
         }
 
         [TestMethod]

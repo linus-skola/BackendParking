@@ -43,3 +43,14 @@ C:\Users\lism501\Source\Repos\linus-skola\BackendParking\BackendParking\obj\Debu
 C:\Users\lism501\Source\Repos\linus-skola\BackendParking\BackendParking\obj\Debug\BackendParking.csproj.CopyComplete
 C:\Users\lism501\Source\Repos\linus-skola\BackendParking\BackendParking\obj\Debug\BackendParking.exe
 C:\Users\lism501\Source\Repos\linus-skola\BackendParking\BackendParking\obj\Debug\BackendParking.pdb
+C:\Users\Linnea\Source\Repos\linus-skola\BackendParking\BackendParking\bin\Debug\BackendParking.exe.config
+C:\Users\Linnea\Source\Repos\linus-skola\BackendParking\BackendParking\bin\Debug\BackendParking.exe
+C:\Users\Linnea\Source\Repos\linus-skola\BackendParking\BackendParking\bin\Debug\BackendParking.pdb
+C:\Users\Linnea\Source\Repos\linus-skola\BackendParking\BackendParking\bin\Debug\ParkingLotLogic.dll
+C:\Users\Linnea\Source\Repos\linus-skola\BackendParking\BackendParking\bin\Debug\VehicleObjects.dll
+C:\Users\Linnea\Source\Repos\linus-skola\BackendParking\BackendParking\bin\Debug\ParkingLotLogic.pdb
+C:\Users\Linnea\Source\Repos\linus-skola\BackendParking\BackendParking\bin\Debug\VehicleObjects.pdb
+C:\Users\Linnea\Source\Repos\linus-skola\BackendParking\BackendParking\obj\Debug\BackendParking.csprojAssemblyReference.cache
+C:\Users\Linnea\Source\Repos\linus-skola\BackendParking\BackendParking\obj\Debug\BackendParking.csproj.CopyComplete
+C:\Users\Linnea\Source\Repos\linus-skola\BackendParking\BackendParking\obj\Debug\BackendParking.exe
+C:\Users\Linnea\Source\Repos\linus-skola\BackendParking\BackendParking\obj\Debug\BackendParking.pdb

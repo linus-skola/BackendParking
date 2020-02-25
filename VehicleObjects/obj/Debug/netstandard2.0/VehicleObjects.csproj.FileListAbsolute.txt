@@ -31,3 +31,11 @@ C:\Users\lism501\Source\Repos\linus-skola\BackendParking\VehicleObjects\obj\Debu
 C:\Users\lism501\Source\Repos\linus-skola\BackendParking\VehicleObjects\obj\Debug\netstandard2.0\VehicleObjects.AssemblyInfo.cs
 C:\Users\lism501\Source\Repos\linus-skola\BackendParking\VehicleObjects\obj\Debug\netstandard2.0\VehicleObjects.dll
 C:\Users\lism501\Source\Repos\linus-skola\BackendParking\VehicleObjects\obj\Debug\netstandard2.0\VehicleObjects.pdb
+C:\Users\Linnea\Source\Repos\linus-skola\BackendParking\VehicleObjects\bin\Debug\netstandard2.0\VehicleObjects.deps.json
+C:\Users\Linnea\Source\Repos\linus-skola\BackendParking\VehicleObjects\bin\Debug\netstandard2.0\VehicleObjects.dll
+C:\Users\Linnea\Source\Repos\linus-skola\BackendParking\VehicleObjects\bin\Debug\netstandard2.0\VehicleObjects.pdb
+C:\Users\Linnea\Source\Repos\linus-skola\BackendParking\VehicleObjects\obj\Debug\netstandard2.0\VehicleObjects.csprojAssemblyReference.cache
+C:\Users\Linnea\Source\Repos\linus-skola\BackendParking\VehicleObjects\obj\Debug\netstandard2.0\VehicleObjects.AssemblyInfoInputs.cache
+C:\Users\Linnea\Source\Repos\linus-skola\BackendParking\VehicleObjects\obj\Debug\netstandard2.0\VehicleObjects.AssemblyInfo.cs
+C:\Users\Linnea\Source\Repos\linus-skola\BackendParking\VehicleObjects\obj\Debug\netstandard2.0\VehicleObjects.dll
+C:\Users\Linnea\Source\Repos\linus-skola\BackendParking\VehicleObjects\obj\Debug\netstandard2.0\VehicleObjects.pdb
