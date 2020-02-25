@@ -1,24 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Rikard\\Source\\Repos\\BackendParkingRealTest\\VehicleObjects\\VehicleObjects.csproj": {}
+    "C:\\Projects\\BackendParking\\VehicleObjects\\VehicleObjects.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Rikard\\Source\\Repos\\BackendParkingRealTest\\VehicleObjects\\VehicleObjects.csproj": {
+    "C:\\Projects\\BackendParking\\VehicleObjects\\VehicleObjects.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Rikard\\Source\\Repos\\BackendParkingRealTest\\VehicleObjects\\VehicleObjects.csproj",
+        "projectUniqueName": "C:\\Projects\\BackendParking\\VehicleObjects\\VehicleObjects.csproj",
         "projectName": "VehicleObjects",
-        "projectPath": "C:\\Users\\Rikard\\Source\\Repos\\BackendParkingRealTest\\VehicleObjects\\VehicleObjects.csproj",
-        "packagesPath": "C:\\Users\\Rikard\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Rikard\\Source\\Repos\\BackendParkingRealTest\\VehicleObjects\\obj\\",
+        "projectPath": "C:\\Projects\\BackendParking\\VehicleObjects\\VehicleObjects.csproj",
+        "packagesPath": "C:\\Users\\linus\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\BackendParking\\VehicleObjects\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Rikard\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\linus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
