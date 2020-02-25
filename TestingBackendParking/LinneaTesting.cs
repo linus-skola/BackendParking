@@ -8,12 +8,25 @@ namespace TestingBackendParking
     [TestClass]
     public class LinneaTesting
     {
-        // Fix
-        [DataRow(0, 0)]
-        [DataRow(5, 60)]
+        // Cars
+        [DataRow("aaa", 1)]
+        [DataRow("bbb", 2)]
+        [DataRow("ccc", 3)]
 
         [TestMethod]
-        public void TestAddVehicleParkingLot()
+        public void TestAddCarParkingLot(string regNr, int expectedSpot)
+        {
+            ParkingLot pLot = new ParkingLot();
+            pLot.AddParkingSpot(100, 10);
+
+            Car c = new Car(DateTime.Now, regNr);
+            int spot = pLot.AddVehicle(c);
+
+            Assert.AreEqual(spot, expectedSpot);
+        }
+
+        [TestMethod]
+        public void TestAddMcParkingLot(string regNr)
         {
             int expectedSpot = 1;
             ParkingLot pLot = new ParkingLot();
