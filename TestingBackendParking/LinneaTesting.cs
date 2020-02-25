@@ -13,7 +13,7 @@ namespace TestingBackendParking
         [DataRow(5, 60)]
 
         [TestMethod]
-        public void TestAddVehicleParkingLot(int parkinglotNr,)
+        public void TestAddVehicleParkingLot()
         {
             Assert.Inconclusive();
         }
