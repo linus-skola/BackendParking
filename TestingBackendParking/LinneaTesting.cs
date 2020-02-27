@@ -6,7 +6,8 @@ using VehicleObjects;
 namespace TestingBackendParking
 {
     [TestClass]
-    public class LinneaTesting
+    public partial class UnitTesting
+
     {
         public TestContext TestContext { get; set; }
         private static ParkingLot pLot;
@@ -38,7 +39,7 @@ namespace TestingBackendParking
         [DataRow("ccc", 2)]
 
         [TestMethod]
-        public void TestAddCarParkingLot(string regNr, int expectedSpot)
+        public void LinneaTestAddCarParkingLot(string regNr, int expectedSpot)
         {
             Car c = new Car(DateTime.Now, regNr);
             int spot = pLot.AddVehicle(c);
@@ -51,7 +52,7 @@ namespace TestingBackendParking
         [DataRow("eee", 3)]
         [DataRow("fff", 4)]
         [TestMethod]
-        public void TestAddMcParkingLot(string regNr, int expectedSpot)
+        public void LinneaTestAddMcParkingLot(string regNr, int expectedSpot)
         {
             MC c = new MC(DateTime.Now, regNr);
             int spot = pLot.AddVehicle(c);
@@ -61,7 +62,7 @@ namespace TestingBackendParking
 
         [DataRow("ggg", "hhh", 5)]
         [TestMethod]
-        public void TestAddTwoMcAtSameSpotParkingLot(string firstRegNr, string secondRegNr, int expectedSpot)
+        public void LinneaTestAddTwoMcAtSameSpotParkingLot(string firstRegNr, string secondRegNr, int expectedSpot)
         {
             MC c = new MC(DateTime.Now, firstRegNr);
             MC mc = new MC(DateTime.Now, secondRegNr);
@@ -74,7 +75,7 @@ namespace TestingBackendParking
 
         [DataRow("aaa")]
         [TestMethod]
-        public void TestRemoveVehicleParkingLot(string regNr)
+        public void LinneaTestRemoveVehicleParkingLot(string regNr)
         {
             IVehicle actualMc = pLot.RemoveVehicle(regNr);
 
@@ -83,7 +84,7 @@ namespace TestingBackendParking
 
         [DataRow("hhh")]
         [TestMethod]
-        public void TestSearchVehicleParkingLot(string regNr)
+        public void LinneaTestSearchVehicleParkingLot(string regNr)
         {
             IVehicle vehicle = pLot.SearchVehicle(regNr, out int location);
 
@@ -91,19 +92,19 @@ namespace TestingBackendParking
         }
 
         [TestMethod]
-        public void TestParkingSpotContentParkingLot()
+        public void LinneaTestParkingSpotContentParkingLot()
         {
             Assert.Inconclusive();
         }
 
         [TestMethod]
-        public void TestOptimizeParkingLotParkingLot()
+        public void LinneaTestOptimizeParkingLotParkingLot()
         {
             Assert.Inconclusive();
         }
 
         [TestMethod]
-        public void TestAddParkingSpotParkingLot()
+        public void LinneaTestAddParkingSpotParkingLot()
         {
             Assert.Inconclusive();
         }
