@@ -8,17 +8,38 @@ namespace TestingBackendParking
     [TestClass]
     public class LinneaTesting
     {
+        public TestContext TestContext { get; set; }
+        private static ParkingLot pLot;
+
+        private ParkingLot PLot
+        {
+            get => pLot;
+        }
+
+        #region ClassInitialize
+        [ClassInitialize]
+        public static void ClassInitialize(TestContext context)
+        {
+            pLot = new ParkingLot();
+            context.WriteLine("Creating testing parkinglot");
+            pLot.AddParkingSpot(100,10);
+        }
+
+        [ClassCleanup]
+        public static void ClassCleanup()
+        {
+        }
+        #endregion
+
+
         // Cars
         [DataRow("aaa", 0)]
-        [DataRow("bbb", 0)]
-        [DataRow("ccc", 0)]
+        [DataRow("bbb", 1)]
+        [DataRow("ccc", 2)]
 
         [TestMethod]
         public void TestAddCarParkingLot(string regNr, int expectedSpot)
         {
-            ParkingLot pLot = new ParkingLot();
-            pLot.AddParkingSpot(100, 10);
-
             Car c = new Car(DateTime.Now, regNr);
             int spot = pLot.AddVehicle(c);
 
@@ -26,28 +47,22 @@ namespace TestingBackendParking
         }
 
         // Mc's
-        [DataRow("aaa", 0)]
-        [DataRow("bbb", 0)]
-        [DataRow("ccc", 0)]
+        [DataRow("ddd", 3)]
+        [DataRow("eee", 3)]
+        [DataRow("fff", 4)]
         [TestMethod]
         public void TestAddMcParkingLot(string regNr, int expectedSpot)
         {
-            ParkingLot pLot = new ParkingLot();
-            pLot.AddParkingSpot(100, 10);
-
             MC c = new MC(DateTime.Now, regNr);
             int spot = pLot.AddVehicle(c);
 
             Assert.AreEqual(expectedSpot, spot);
         }
 
-        [DataRow("aaa", "bbb", 5)]
+        [DataRow("ggg", "hhh", 5)]
         [TestMethod]
         public void TestAddTwoMcAtSameSpotParkingLot(string firstRegNr, string secondRegNr, int expectedSpot)
         {
-            ParkingLot pLot = new ParkingLot();
-            pLot.AddParkingSpot(100, 10);
-
             MC c = new MC(DateTime.Now, firstRegNr);
             MC mc = new MC(DateTime.Now, secondRegNr);
             int spotFirst = pLot.AddVehicle(c, 5);
@@ -61,28 +76,18 @@ namespace TestingBackendParking
         [TestMethod]
         public void TestRemoveVehicleParkingLot(string regNr)
         {
-            ParkingLot pLot = new ParkingLot();
-            pLot.AddParkingSpot(100, 10);
+            IVehicle actualMc = pLot.RemoveVehicle(regNr);
 
-            MC expectedMc = new MC(DateTime.Now, regNr);
-            pLot.AddVehicle(expectedMc);
-            IVehicle actualMc = pLot.RemoveVehicle(expectedMc.RegNum);
-
-            Assert.AreEqual(expectedMc, actualMc);
+            Assert.AreEqual(regNr, actualMc.RegNum);
         }
 
-        [DataRow("aaa")]
+        [DataRow("hhh")]
         [TestMethod]
         public void TestSearchVehicleParkingLot(string regNr)
         {
-            ParkingLot pLot = new ParkingLot();
-            pLot.AddParkingSpot(100, 10);
+            IVehicle vehicle = pLot.SearchVehicle(regNr, out int location);
 
-            MC expectedMc = new MC(DateTime.Now, regNr);
-            pLot.AddVehicle(expectedMc);
-            IVehicle vehicle = pLot.SearchVehicle(expectedMc.RegNum, out int location);
-
-            Assert.AreEqual(expectedMc, vehicle);
+            Assert.AreEqual(regNr, vehicle.RegNum);
         }
 
         [TestMethod]
