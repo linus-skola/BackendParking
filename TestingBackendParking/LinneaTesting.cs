@@ -6,8 +6,7 @@ using VehicleObjects;
 namespace TestingBackendParking
 {
     [TestClass]
-    public partial class UnitTesting
-
+    public class LinneaTesting
     {
         public TestContext TestContext { get; set; }
         private static ParkingLot pLot;
